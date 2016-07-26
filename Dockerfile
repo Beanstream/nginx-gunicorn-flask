@@ -25,7 +25,6 @@ RUN mkdir /etc/nginx/sites-enabled
 RUN rm -f /etc/nginx/sites-enabled/default
 COPY flask.conf /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/flask.conf /etc/nginx/sites-enabled/flask.conf
-
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Setup supervisord
