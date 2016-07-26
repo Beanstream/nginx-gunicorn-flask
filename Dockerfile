@@ -3,11 +3,6 @@
 FROM alpine:3.4
 MAINTAINER Sven M. Resch <sven.resch@beanstream.com>
 
-#ENV DEBIAN_FRONTEND noninteractive
-
-#RUN apt-get update
-#RUN apt-get install -y python python-pip python-virtualenv nginx gunicorn supervisor
-
 # Install platform dependencies --> removed python-dev build-base
 RUN apk add --update \
     python py-pip \
