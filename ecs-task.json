@@ -2,14 +2,14 @@
   "containerDefinitions": [
     {
       "name": "hello",
-      "image": "danriti/nginx-gunicorn-flask",
+      "image": "beanstream/nginx-gunicorn-flask",
       "essential": true,
       "memory": 500,
       "cpu": 10,
       "portMappings": [
         {
-          "containerPort": 80,
-          "hostPort": 80
+          "containerPort": 8080,
+          "hostPort": 8080
         }
       ]
     }
