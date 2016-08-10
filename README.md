@@ -30,7 +30,7 @@ docker build -t beanstream/nginx-gunicorn-flask:1.0.0 .
 ### Usage
 
 ```bash
-docker run -d -p 80:8080 beanstream/nginx-gunicorn-flask
+docker run -d -p 80:8080 beanstream/nginx-gunicorn-flask:1.0.0
 ```
 
 After few seconds, open `http://<host>` to see the Flask app.
